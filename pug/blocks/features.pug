@@ -1,0 +1,8 @@
+div.features
+  include ./feature.pug
+  ul.features__list
+    - for (let i = 0; i <= features.length - 1; i++) {
+        li(class="feature "+features[i].mod)
+          h2.feature__title #{features[i].title}
+          p.feature__text #{features[i].text}
+    - }

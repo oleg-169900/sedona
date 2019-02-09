@@ -1,0 +1,28 @@
+-
+  const popupData = [
+    {
+      mod: "popup--failure",
+      title: "Что-то пошло не так!",
+      text: "Проверьте поля со звёздочкой скорее всего, Вы забыли их заполнить",
+      btn: {
+        mod: "popup__btn--failure",
+        text: "OK",
+      },
+    },
+    {
+      mod: "popup--success",
+      title: "Ваш отзыв отправлен!",
+      text: "Спасибо за Ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.",
+      btn: {
+        mod: "popup__btn--success",
+        text: "Закрыть окно",
+      },
+    },
+  ]
+
+- for (let i = 0; i <= popupData.length - 1; i++) {
+    div(class="popup "+popupData[i].mod).hidden
+      h3.popup__title #{popupData[i].title}
+      p.popup__text #{popupData[i].text}
+      button(class="popup__btn "+popupData[i].btn.mod) #{popupData[i].btn.text}
+- }

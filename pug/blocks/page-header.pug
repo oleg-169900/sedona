@@ -1,0 +1,9 @@
+header.page-header
+  include ./main-nav.pug
+  div.page-header__logo
+    a.page-header__link(href="index.html")
+      picture.page-header__logo-img
+        source(media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg")
+        source(media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg")
+        img(src="img/logo-sedona-mobile.svg" width="200" height="60" alt="Логотип")
+  include ./menu-toggle.pug

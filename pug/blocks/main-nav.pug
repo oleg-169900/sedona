@@ -1,0 +1,30 @@
+nav.main-nav
+  ul.main-nav__list
+    -
+      const items = [
+        {
+          mod: page === "index" ? "main-nav__item--active" : "",
+          link: page === "index" ? null : "index.html",
+          content: "Главная",
+        },
+        {
+          mod: page === "photo" ? "main-nav__item--active" : "",
+          link: page === "photo" ? null : "photo.html",
+          content: "Фото и видео",
+        },
+        {
+          mod: page === "form" ? "main-nav__item--active" : "",
+          link: page === "form" ? null : "form.html",
+          content: "Форма отзыва",
+        },
+        {
+          mod: "",
+          link: "https://htmlacademy.ru",
+          content: "HTML Academy"
+        }
+      ]
+
+    - for (let i = 0; i <= items.length - 1; i++) {
+        li(class="main-nav__item "+items[i].mod)
+          a.main-nav__link(href=items[i].link) #{items[i].content}
+    - }

@@ -1,0 +1,24 @@
+-
+  const pageTitles = [
+    {
+      page: "index",
+      title: "Главная",
+    },
+    {
+      page: "photo",
+      title: "Фото и видео",
+    },
+    {
+      page: "form",
+      title: "Форма отзыва",
+    }
+  ]
+
+  const pageTitle = pageTitles.find((val) => val.page === page).title
+
+head
+  meta(charset="utf-8")
+  link(rel="shortcut icon" href="favicon.png" type="image/x-icon")
+  link(rel="stylesheet" href="css/style.css")
+  meta(name="viewport" content="width=device-width")
+  title #{pageTitle}

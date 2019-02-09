@@ -1,0 +1,262 @@
+.field-text {
+  margin-bottom: 20px;
+  margin-top: -8px;
+}
+
+.field-text__item {
+  display: flex;
+  align-items: center;
+}
+
+.field-text__item--contacts {
+  flex-wrap: wrap;
+}
+
+.field-text__title {
+  margin-top: 15px;
+  margin-bottom: 13px;
+
+  font-family: @font-family-secondary;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.field-text__title--contacts {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.field-text__input {
+  flex-grow: 1;
+  display: inline-block;
+  vertical-align: top;
+
+  height: 45px;
+  margin: 10px 0;
+  padding-left: 18px;
+
+  font-family: @font-family-secondary;
+  font-size: 15px;
+  line-height: 26px;
+
+  background-color: @input-color-primary;
+  border: 5px solid @input-color-primary;
+
+  overflow-x: hidden;
+}
+
+.field-text__input:focus {
+  background: #ffffff;
+  border-color: @secondary-color;
+}
+
+.field-text__item--tel::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+
+  margin-left: -5px;
+  width: 58px;
+  height: 57px;
+  background: @input-color-secondary url("../img/icon-phone.svg") no-repeat 55% center;
+}
+
+.field-text__item--email::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+
+  margin-left: -5px;
+  width: 58px;
+  height: 57px;
+  background: @input-color-secondary url("../img/icon-mail.svg") no-repeat 55% center;
+}
+
+.field-text__text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 13px;
+
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.field-text__input:hover {
+  background-color: @secondary-color;
+  border-color: @secondary-color;
+}
+
+.field-text__text--number-alt {
+  display: none;
+}
+
+.field-text__input::placeholder {
+  color: #000000;
+  font-size: 18px;
+}
+
+.field-text__input:focus::placeholder {
+  color: transparent;
+}
+
+.field-text__text--number,
+.field-text__text--email {
+  margin-left: 20px;
+}
+
+
+@media @tablet-width {
+  .field-text {
+    margin: 0;
+  }
+
+  .field-text__text {
+    margin-right: 20px;
+  }
+
+  .field-text__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0;
+    padding-bottom: 48px;
+
+    font-size: 21px;
+    text-align: center;
+
+    &--contacts {
+      padding-bottom: 25px;
+    }
+
+    &--personal {
+      padding-left: 5px;
+    }
+  }
+
+  .field-text__item--contacts {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 25px;
+  }
+
+  .field-text__item--contacts {
+    .field-text__text {
+      margin-left: 20px;
+    }
+  }
+
+  .form__inner--contacts {
+    .field-text__title::before {
+      content: "";
+      display: inline-block;
+      vertical-align: top;
+
+      min-width: 125px;
+      height: 1px;
+      margin-right: 40px;
+
+      background: @secondary-color;
+    }
+  }
+
+  .form__inner--contacts {
+    .field-text__title::after {
+      content: "";
+      display: inline-block;
+      vertical-align: top;
+
+      min-width: 125px;
+      height: 1px;
+      margin-left: 40px;
+
+      background: @secondary-color;
+    }
+  }
+
+  .field-text__input {
+    width: 150px;
+
+    &--tel {
+      width: 560px;
+      margin: 0;
+      margin-top: 5px;
+    }
+
+    &--email {
+      width: 560px;
+      margin: 0;
+      margin-top: 5px;
+    }
+  }
+
+  .field-text__item--tel::after,
+  .field-text__item--email::after {
+    margin-top: 5px;
+    margin-left: -3px;
+  }
+}//@media
+
+@media @desktop-width {
+  .field-text__items--contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .field-text__title--contacts {
+    padding-bottom: 75px;
+    text-align: center;
+  }
+
+  .field-text__title--personal {
+    padding-left: 0;
+  }
+
+  .field-text__title--contacts::before,
+  .field-text__title--contacts::after {
+    width: 280px;
+  }
+
+  .field-text__input {
+    width: 235px;
+
+    &--tel {
+      width: 227px;
+      margin: 0;
+      margin-top: -4px;
+      padding-left: 18px;
+    }
+
+    &--email {
+      width: 227px;
+      margin: 0;
+      margin-top: -4px;
+    }
+  }
+
+  .field-text__text {
+    margin-right: 15px;
+
+    &--number-alt {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    &--number {
+      display: none;
+    }
+  }
+
+  .field-text__item--contacts {
+    .field-text__text {
+      margin-left: 0;
+    }
+  }
+
+  .field-text__item--tel::after,
+  .field-text__item--email::after {
+    margin-top: -4px;
+  }
+}//@media (min-width: 1200px)

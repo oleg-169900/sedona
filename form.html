@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width">
+    <title>Форма отзыва</title>
+  </head>
+  <body>
+    <svg style="display: none">
+      <symbol id="icon-twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+        <g id="W6EeEF_1_">
+          <g>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"></path>
+          </g>
+        </g>
+      </symbol>
+      <symbol id="icon-facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+        <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"></path>
+      </symbol>
+      <symbol id="icon-youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+        <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"></path>
+      </symbol>
+    </svg>
+    <header class="page-header">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item "><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item "><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
+          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Форма отзыва</a></li>
+          <li class="main-nav__item "><a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a></li>
+        </ul>
+      </nav>
+      <div class="page-header__logo"><a class="page-header__link" href="index.html">
+          <picture class="page-header__logo-img">
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"><img src="img/logo-sedona-mobile.svg" width="200" height="60" alt="Логотип">
+          </picture></a></div>
+      <button class="menu-toggle" type="button"><span class="hidden">Menu toggle</span></button>
+    </header>
+    <main>
+      <div class="page-heading">
+        <div class="page-heading__background page-heading__background--secondary"><img class="page-heading__image page-heading__image--secondary" src="img/text-sedona.svg" alt="Sedona" width="230" height="40"></div>
+        <h1 class="page-heading__title page-heading__title--secondary">Оставьте свой отзыв</h1>
+        <p class="page-heading__text page-heading__text--secondary">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
+      </div>
+      <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="field-text form__inner form__inner--personal">
+          <div class="field-text__title field-text__title--personal">Представьтесь</div>
+          <div class="field-text__items">
+            <label class="field-text__item"><span class="field-text__text field-text__text--personal">Имя*:</span>
+              <input class="field-text__input field-text__input--name" type="text" name="username" placeholder="Иван" required>
+            </label>
+            <label class="field-text__item"><span class="field-text__text field-text__text--personal">Фамилия*:</span>
+              <input class="field-text__input field-text__input--surname" type="text" name="user-surname" placeholder="Иванов" required>
+            </label>
+            <label class="field-text__item"><span class="field-text__text field-text__text--personal">Отчество:</span>
+              <input class="field-text__input field-text__input--patronymic" type="text" name="user-patronymic" placeholder="Иванович">
+            </label>
+          </div>
+        </div>
+        <div class="field-text form__inner form__inner--contacts">
+          <div class="field-text__title field-text__title--contacts">Контактная информация:</div>
+          <div class="field-text__items field-text__items--contacts">
+            <label class="field-text__item field-text__item--contacts field-text__item--tel"><span class="field-text__text field-text__text--number">Контактный телефон*:</span><span class="field-text__text field-text__text--number-alt">Телефон*:</span>
+              <input class="field-text__input field-text__input--tel" type="tel" name="tel" placeholder="8-111-222-33-44" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+            </label>
+            <label class="field-text__item field-text__item--contacts field-text__item--email"><span class="field-text__text field-text__text--email">Электронная почта*:</span>
+              <input class="field-text__input field-text__input--email" type="email" name="email" placeholder="Введите e-mail" required>
+            </label>
+          </div>
+        </div>
+        <div class="field-radio form__inner form__inner--impressions">
+          <div class="field-radio__title">Ваше общее впечатление:</div>
+          <div class="field-radio__items">
+            <label class="field-radio__item">
+              <input class="field-radio__input" type="radio" name="impression" id="good" checked><span class="field-radio__text">Скорее положительное</span>
+            </label>
+            <label class="field-radio__item">
+              <input class="field-radio__input" type="radio" name="impression" id="bad"><span class="field-radio__text">Скорее отрицательное</span>
+            </label>
+            <label class="field-radio__item">
+              <input class="field-radio__input" type="radio" name="impression" id="dont-know"><span class="field-radio__text">Затрудняюсь ответить</span>
+            </label>
+          </div>
+        </div>
+        <div class="field-checkbox form__inner form__inner--sights">
+          <div class="field-checkbox__title">Посещённые достопримечательности:</div>
+          <div class="field-checkbox__items">
+            <label class="field-checkbox__item">
+              <input class="field-checkbox__input" type="checkbox" name="sight" id="bridge" checked><span class="field-checkbox__text">Мост Дьявола</span>
+            </label>
+            <label class="field-checkbox__item">
+              <input class="field-checkbox__input" type="checkbox" name="sight" id="slide-park" checked><span class="field-checkbox__text">Слайд-парк</span>
+            </label>
+            <label class="field-checkbox__item">
+              <input class="field-checkbox__input" type="checkbox" name="sight" id="mountain-bell"><span class="field-checkbox__text">Гора-Колокол</span>
+            </label>
+            <label class="field-checkbox__item">
+              <input class="field-checkbox__input" type="checkbox" name="sight" id="red-rocks" checked><span class="field-checkbox__text">Красные скалы</span>
+            </label>
+          </div>
+        </div>
+        <div class="field-textarea form__inner">
+          <h3 class="field-textarea__title">Опишите свои эмоции:</h3>
+          <textarea class="field-textarea__text" name="emotions" id="emotions" rows="5" cols="24">Опишите подробно все свои восторги</textarea>
+        </div>
+        <input class="btn" type="submit" value="Отправить отзыв"><span class="form__fields-required">&nbsp;<sup>*&nbsp;&nbsp;&ndash;&nbsp;&nbsp;обязательные поля</span>
+      </form>
+    </main>
+    <section class="page-footer">
+      <h2 class="page-footer__hashtag">#visitsedona</h2>
+      <div class="social"><a class="social__link" href="https://vk.com/htmlacademy">
+          <svg width="17" height="14" fill="#ffffff">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+          </svg><span class="social__text hidden">twitter</span></a><a class="social__link" href="https://ru-ru.facebook.com/htmlacademy/">
+          <svg width="8" height="19" fill="#ffffff">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+          </svg><span class="social__text hidden">fb</span></a><a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+          <svg width="20" height="14" fill="#ffffff">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>
+          </svg><span class="social__text hidden">youtube</span></a>
+      </div>
+      <div class="copyright"><span class="copyright__text">Разработано</span><a class="copyright__link" href="htmlacademy.ru">
+          <svg class="copyright__logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"></path>
+          </svg></a></div>
+    </section>
+    <div class="popup popup--failure hidden">
+      <h3 class="popup__title">Что-то пошло не так!</h3>
+      <p class="popup__text">Проверьте поля со звёздочкой скорее всего, Вы забыли их заполнить</p>
+      <button class="popup__btn popup__btn--failure">OK</button>
+    </div>
+    <div class="popup popup--success hidden">
+      <h3 class="popup__title">Ваш отзыв отправлен!</h3>
+      <p class="popup__text">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="popup__btn popup__btn--success">Закрыть окно</button>
+    </div>
+    <script src="js/menu-toggle.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>

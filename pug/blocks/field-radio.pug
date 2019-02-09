@@ -1,0 +1,27 @@
+-
+  const impressions = [
+    {
+      id: "good",
+      text: "Скорее положительное",
+      checked: true,
+    },
+    {
+      id: "bad",
+      text: "Скорее отрицательное",
+      checked: false,
+    },
+    {
+      id: "dont-know",
+      text: "Затрудняюсь ответить",
+      checked: false,
+    },
+  ]
+
+div.field-radio.form__inner.form__inner--impressions
+  div.field-radio__title Ваше общее впечатление:
+  div.field-radio__items
+    - for (let i = 0; i <= impressions.length - 1; i++) {
+      label.field-radio__item
+        input.field-radio__input(type="radio" name="impression" id= impressions[i].id checked= impressions[i].checked)
+        span.field-radio__text #{impressions[i].text}
+    - }

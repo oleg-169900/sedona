@@ -1,0 +1,130 @@
+.booking__title {
+  margin-bottom: 20px;
+  margin-top: 30px;
+
+  font-family: @font-family-secondary;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+
+.booking__text {
+  width: 280px;
+  margin: 0 auto;
+
+  font-family: @font-family-primary;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.booking__btn {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 0;
+  margin-top: 35px;
+  width: 280px;
+
+  font-family: @font-family-secondary;
+  font-size: 21px;
+  line-height: 26px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: @primary-color;
+}
+
+.booking__map-wrapper {
+  width: 100%;
+  height: 350px;
+  margin-top: 50px;
+
+  background: url("../img/bg-map-mobile@1x.jpg") no-repeat center;
+}
+
+.booking__map {
+  width: 100%;
+  height: inherit;
+  border: none;
+}
+
+.booking__btn:hover {
+  background: #669ec0;
+}
+
+.booking__btn:active {
+  color: rgba(255, 255, 255, 0.4);
+  background: #5496bd;
+}
+
+.booking__btn:disabled {
+  background: @secondary-color;
+}
+
+.booking__devider {
+  display: none;
+}
+
+
+@media @tablet-width {
+  .booking__devider {
+    display: inline;
+  }
+
+  .booking__title {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .booking__text,
+  .booking__btn {
+    width: 457px;
+  }
+
+  .booking__text {
+    margin-top: 25px;
+  }
+
+  .booking__btn {
+    margin-top: 45px;
+  }
+
+  .booking__map-wrapper {
+    margin-top: 60px;
+    background: url("../img/bg-map-tablet@1x.jpg") no-repeat center;
+  }
+}//@media
+
+@media @desktop-width {
+  .booking__map-wrapper {
+    margin-top: 65px;
+    background: url("../img/bg-map-desktop@1x.jpg") no-repeat center;
+  }
+
+  .booking__btn {
+    margin-top: 50px;
+  }
+}//@media
+
+@media (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .booking__map-wrapper {
+    background: url("../img/bg-map-mobile@2x.jpg") no-repeat center / contain;
+  }
+}
+
+@media @tablet-width and (min-resolution: 144dpi), @tablet-width and (min-resolution: 1.5dppx) {
+  .booking__map-wrapper {
+    background: url("../img/bg-map-tablet@2x.jpg") no-repeat center / contain;
+  }
+}
+
+@media @desktop-width and (min-resolution: 144dpi), @desktop-width and (min-resolution: 1.5dppx) {
+  .booking__map-wrapper {
+    background: url("../img/bg-map-desktop@2x.jpg") no-repeat center / contain;
+  }
+}

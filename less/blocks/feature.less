@@ -1,0 +1,129 @@
+.feature__title {
+  margin-top: 0;
+
+  font-family: @font-family-secondary;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.feature {
+  width: 210px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 70px;
+
+  background-repeat: no-repeat;
+  background-position: 9% 0%;
+
+  &--motel {
+    background-image: url("../img/icon-house.svg");
+  }
+
+  &--souvenirs {
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  &--food {
+    background-image: url("../img/icon-burger.svg");
+  }
+}
+
+.feature__text {
+  margin-top: 15px;
+  margin-bottom: 0;
+
+  font-family: @font-family-primary;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.feature__devider {
+  display: none;
+}
+
+
+@media @tablet-width {
+  .feature {
+    width: 200px;
+    padding-left: 0;
+    padding-top: 145px;
+    padding-bottom: 10px;
+
+    text-align: center;
+
+    &--motel {
+      background-position: center 20%;
+      background-size: 40%;
+      order: 1;
+    }
+
+    &--souvenirs {
+      background-position: center 20%;
+      background-size: 32%;
+      order: 3;
+    }
+
+    &--food {
+      background-position: center 22%;
+      background-size: 39%;
+      order: 2;
+    }
+  }
+
+  .feature__title {
+    margin-top: -5px;
+    font-size: 20px;
+  }
+
+  .feature__text {
+    width: 165px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .feature__devider--tablet {
+    display: inline;
+  }
+}//@media
+
+@media @desktop-width {
+  .feature__title {
+    width: 260px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+  }
+
+  .feature__text {
+    width: auto;
+  }
+
+  .feature {
+    width: 300px;
+
+    &--motel {
+      background-position: center 26%;
+      background-size: 26%;
+    }
+
+    &--souvenirs {
+      background-position: center 26%;
+      background-size: 21%;
+    }
+
+    &--food {
+      background-position: center 28%;
+      background-size: 27%;
+    }
+  }
+
+  .feature__devider--tablet {
+    display: none;
+  }
+
+  .feature__devider {
+    display: inline;
+  }
+}//@media

@@ -1,0 +1,85 @@
+.field-textarea__title {
+  margin-top: 25px;
+  margin-bottom: 20px;
+
+  font-family: @font-family-secondary;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.field-textarea__text {
+  font-family: @font-family-secondary;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none;
+
+  padding-top: 15px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 25px;
+
+  background-color: @input-color-primary;
+
+  border: none;
+}
+
+
+@media @tablet-width {
+  .field-textarea__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 21px;
+    margin-bottom: 60px;
+  }
+
+  .field-textarea__text {
+    height: 120px;
+  }
+
+  .field-textarea__title::before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+
+    width: 125px;
+    height: 1px;
+    margin-right: 65px;
+    background: @secondary-color;
+  }
+
+  .field-textarea__title::after {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+
+    width: 125px;
+    height: 1px;
+    margin-left: 65px;
+    background: @secondary-color;
+  }
+}//@media (min-width: 768px)
+
+@media @desktop-width {
+  .field-textarea {
+    width: 960px;
+  }
+
+  .field-textarea__title {
+    text-align: center;
+  }
+
+  .field-textarea__title::before,
+  .field-textarea__title::after {
+    width: 280px;
+  }
+
+  .field-textarea__text {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+  }
+}//@media

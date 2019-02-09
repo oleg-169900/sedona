@@ -1,0 +1,50 @@
+.btn {
+  display: block;
+  width: 280px;
+  height: 57px;
+  margin: 0 auto;
+  margin-top: 45px;
+
+  font-family: @font-family-secondary;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: @primary-color;
+
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #669ec0;
+}
+
+.btn:active {
+  color: rgba(255, 255, 255, 0.4);
+  background: #5496bd;
+}
+
+.btn:disabled {
+  background: @secondary-color;
+}
+
+
+@media @tablet-width {
+  .btn {
+    width: 325px;
+    margin-top: 50px;
+    margin-left: 0;
+    padding: 0;
+
+    font-size: 21px;
+  }
+}//@media
+
+@media @desktop-width {
+  .btn {
+    width: 480px;
+  }
+}//@media

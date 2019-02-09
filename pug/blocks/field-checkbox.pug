@@ -1,0 +1,32 @@
+-
+  const sights = [
+    {
+      id: "bridge",
+      text: "Мост Дьявола",
+      checked: true,
+    },
+    {
+      id: "slide-park",
+      text: "Слайд-парк",
+      checked: true,
+    },
+    {
+      id: "mountain-bell",
+      text: "Гора-Колокол",
+      checked: false,
+    },
+    {
+      id: "red-rocks",
+      text: "Красные скалы",
+      checked: true,
+    },
+  ]
+
+div.field-checkbox.form__inner.form__inner--sights
+  div.field-checkbox__title Посещённые достопримечательности:
+  div.field-checkbox__items
+    - for (let i = 0; i <= sights.length - 1; i++) {
+      label.field-checkbox__item
+        input.field-checkbox__input(type="checkbox" name="sight" id= sights[i].id checked= sights[i].checked)
+        span.field-checkbox__text #{sights[i].text}
+    - }

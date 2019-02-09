@@ -1,0 +1,163 @@
+.field-checkbox__items {
+  padding-bottom: 10px;
+}
+
+.field-checkbox__item {
+  display: block;
+  padding: 12px 0;
+}
+
+.field-checkbox__title {
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+  font-family: @font-family-secondary;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.field-checkbox__input {
+  display: none;
+}
+
+.field-checkbox__text::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+
+  width: 55px;
+  height: 55px;
+  margin-right: 23px;
+  border-radius: 5px;
+
+  background-color: @input-color-primary;
+}
+
+.field-checkbox__input:checked + .field-checkbox__text::before {
+  background: @input-color-primary url("../img/icon-tick.svg") no-repeat center;
+}
+
+.field-checkbox__text {
+  margin-right: 10px;
+
+  font-family: @font-family-primary;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: none;
+}
+
+
+@media @tablet-width {
+  .field-checkbox {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  .field-checkbox__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    align-self: center;
+    font-size: 21px;
+  }
+
+  .field-checkbox__title::before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+
+    width: 135px;
+    height: 1px;
+    margin-right: 10px;
+    background: @secondary-color;
+  }
+
+  .field-checkbox__title::after {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+
+    width: 135px;
+    height: 1px;
+    margin-left: 10px;
+    background: @secondary-color;
+  }
+
+  .feild-checkbox__text {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .field-checkbox__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .field-checkbox__item {
+    width: 230px;
+    padding-top: 22px;
+    padding-left: 35px;
+
+    &:nth-of-type(1) {
+      order: 1;
+    }
+
+    &:nth-of-type(2) {
+      order: 3;
+    }
+
+    &:nth-of-type(3) {
+      order: 2;
+    }
+
+    &:nth-of-type(4) {
+      order: 4;
+    }
+  }
+}/*@media (min-width: 768px)*/
+
+@media @desktop-width {
+  .field-checkbox {
+    width: 960px;
+  }
+
+  .field-checkbox__items {
+    justify-content: flex-start;
+  }
+
+  .field-checkbox__item {
+    width: 210px;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .field-checkbox__item:nth-child(2n+1) {
+    margin-right: 48px;
+  }
+
+  .field-checkbox__item:last-child {
+    margin-left: 24px;
+  }
+
+  .field-checkbox__title::before {
+    top: 1200px;
+    left: 120px;
+
+    width: 280px;
+  }
+
+  .field-checkbox__title::after {
+    top: 1200px;
+    right: 120px;
+
+    width: 280px;
+  }
+}//@media

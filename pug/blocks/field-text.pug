@@ -1,0 +1,22 @@
+div.field-text.form__inner.form__inner--personal
+  div.field-text__title.field-text__title--personal Представьтесь
+  div.field-text__items
+    label.field-text__item
+      span.field-text__text.field-text__text--personal Имя*:
+      input.field-text__input.field-text__input--name(type="text" name="username" placeholder="Иван" required)
+    label.field-text__item
+      span.field-text__text.field-text__text--personal Фамилия*:
+      input.field-text__input.field-text__input--surname(type="text" name="user-surname" placeholder="Иванов" required)
+    label.field-text__item
+      span.field-text__text.field-text__text--personal Отчество:
+      input.field-text__input.field-text__input--patronymic(type="text" name="user-patronymic" placeholder="Иванович")
+div.field-text.form__inner.form__inner--contacts
+  div.field-text__title.field-text__title--contacts Контактная информация:
+  div.field-text__items.field-text__items--contacts
+    label.field-text__item.field-text__item--contacts.field-text__item--tel
+      span.field-text__text.field-text__text--number Контактный телефон*:
+      span.field-text__text.field-text__text--number-alt Телефон*:
+      input.field-text__input.field-text__input--tel(type="tel" name="tel" placeholder="8-111-222-33-44" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required)
+    label.field-text__item.field-text__item--contacts.field-text__item--email
+      span.field-text__text.field-text__text--email Электронная почта*:
+      input.field-text__input.field-text__input--email(type="email" name="email" placeholder="Введите e-mail" required)

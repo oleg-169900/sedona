@@ -1,0 +1,32 @@
+-
+  const socialLinks = [
+    {
+      href: "https://vk.com/htmlacademy",
+      width: "17",
+      height: "14",
+      icon: "#icon-twitter",
+      text: "twitter",
+    },
+    {
+      href: "https://ru-ru.facebook.com/htmlacademy/",
+      width: "8",
+      height: "19",
+      icon: "#icon-facebook",
+      text: "fb",
+    },
+    {
+      href: "https://www.youtube.com/user/htmlacademyru",
+      width: "20",
+      height: "14",
+      icon: "#icon-youtube",
+      text: "youtube",
+    },
+  ]
+
+div.social
+  - for (let i = 0; i <= socialLinks.length - 1; i++) {
+      a.social__link(href= socialLinks[i].href)
+        svg(width= socialLinks[i].width height= socialLinks[i].height fill="#ffffff")
+          use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href= socialLinks[i].icon)
+        span.social__text.hidden #{socialLinks[i].text}
+  - }

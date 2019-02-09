@@ -1,0 +1,33 @@
+include ./reason.pug
+section.reasons
+  div(class="reason "+reasonsPrimary[0].mod)
+    div.reason__about
+      div.reason__img
+      h2.reason__title #{reasonsPrimary[0].title}
+      p.reason__number &ndash;&nbsp; #{reasonsPrimary[0].number} &nbsp;&ndash;
+      p.reason__text #{reasonsPrimary[0].text}
+    div.reason__picture-wrapper
+      picture.reason__picture
+        source(media="(min-width: 1200px)" srcset= reasonsPrimary[0].srcsetBig)
+        source(media="(min-width: 768px)" srcset= reasonsPrimary[0].srcsetMedium)
+        img(src= reasonsPrimary[0].src srcset= reasonsPrimary[0].srcsetSmall alt= reasonsPrimary[0].alt)
+  include ./features.pug
+  div(class="reason "+reasonsPrimary[1].mod)
+    div.reason__about
+      div.reason__img
+      h2.reason__title #{reasonsPrimary[1].title}
+      p.reason__number &ndash;&nbsp; #{reasonsPrimary[1].number} &nbsp;&ndash;
+      p.reason__text #{reasonsPrimary[1].text}
+    div.reason__picture-wrapper
+      picture.reason__picture
+        source(media="(min-width: 1200px)" srcset= reasonsPrimary[1].srcsetBig)
+        source(media="(min-width: 768px)" srcset= reasonsPrimary[1].srcsetMedium)
+        img(src= reasonsPrimary[1].src srcset= reasonsPrimary[1].srcsetSmall alt= reasonsPrimary[1].alt)
+  div.reasons__inner
+    - for (let i = 0; i <= reasonsSecondary.length - 1; i++) {
+        div.reason.reason--secondary
+          div.reason__about
+            h2.reason__title #{reasonsSecondary[i].title}
+            p.reason__number &ndash;&nbsp; #{reasonsSecondary[i].number} &nbsp;&ndash;
+            p.reason__text #{reasonsSecondary[i].text}
+    - }
