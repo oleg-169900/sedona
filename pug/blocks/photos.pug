@@ -1,5 +1,6 @@
 include ./photo.pug
 section.photos
+  h2.hidden Фотографии
   - for (let i = 0; i <= photosData.length - 1; i++) {
       article(class="photo "+photosData[i].mod)
         div.photo__wrapper
